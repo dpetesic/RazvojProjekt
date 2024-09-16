@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".petesic.MainActivity">
+
+    <Button
+        android:id="@+id/cameraBtn"
+        android:layout_width="227sp"
+        android:layout_height="53sp"
+        android:layout_marginTop="-50sp"
+        android:layout_marginBottom="-75sp"
+        android:text="@string/cameraBtn"
+        app:layout_constraintBottom_toBottomOf="@id/datePicker"
+        app:layout_constraintStart_toStartOf="@id/datePicker"
+        app:layout_constraintTop_toTopOf="@id/datePicker"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="227dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="100sp"
+        android:layout_marginEnd="124sp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editDeveloper"
+        android:layout_width="227dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="75sp"
+        android:layout_marginEnd="122sp"
+        android:ems="10"
+        android:hint="Developer"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/editName"
+        app:layout_constraintTop_toTopOf="@id/editName" />
+
+    <Button
+        android:id="@+id/datePicker"
+        android:layout_width="227sp"
+        android:layout_height="53sp"
+        android:layout_marginTop="75sp"
+        android:text="@string/datePicker"
+        app:layout_constraintEnd_toEndOf="@id/editDeveloper"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/editDeveloper"
+        app:layout_constraintTop_toTopOf="@id/editDeveloper" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130sp"
+        android:layout_marginEnd="260sp"
+        android:text="@string/addBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/cameraBtn"
+        app:layout_constraintTop_toTopOf="@id/cameraBtn" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="@string/updateBtn"
+        app:layout_constraintStart_toStartOf="@id/addBtn"
+        app:layout_constraintTop_toTopOf="@id/addBtn" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="@string/deleteBtn"
+        app:layout_constraintStart_toStartOf="@id/updateBtn"
+        app:layout_constraintTop_toTopOf="@id/addBtn" />
+
+    <Button
+        android:id="@+id/viewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="235sp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="@string/viewBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/editName"
+        app:layout_constraintTop_toTopOf="@id/editName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

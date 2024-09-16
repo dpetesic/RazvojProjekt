@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrugaAktivnost">
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="642dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="41dp"
+        android:text="@string/btnZavrsi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="166dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="160sp"
+        android:layout_marginTop="6sp"
+        android:layout_marginEnd="120sp"
+        android:layout_marginBottom="150sp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tempView"
+        android:layout_width="379dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="25sp"
+        android:layout_marginTop="100sp"
+        android:layout_marginBottom="-150sp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/nameView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nameView" />
+
+    <TextView
+        android:id="@+id/speedView"
+        android:layout_width="376dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="0sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="-150sp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/tempView"
+        app:layout_constraintStart_toStartOf="@id/tempView"
+        app:layout_constraintTop_toTopOf="@id/tempView" />
+
+    <TextView
+        android:id="@+id/humidView"
+        android:layout_width="371dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="0sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="-150sp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/speedView"
+        app:layout_constraintStart_toStartOf="@id/speedView"
+        app:layout_constraintTop_toTopOf="@id/speedView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
